@@ -1,0 +1,90 @@
+<!-- 14/10/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Mahasiswa</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Formulir Pendaftaran</h2>
+        <p>Silahkan isi data berikut</p>
+    </header>
+    <main>
+        <form action="proses.php">
+            <label for="nim">NIM:</label>
+            <input type="text" size="20" maxlength="20" placeholder="isi dengan nim"></input><br>
+            <label for="nama">Nama:</label>
+            <input type="text" size="20" maxlength="20" placeholder="isi nama lengkap"></input><br>
+            <label for="email">Email:</label>
+            <input type="email" size="20" maxlength="20" placeholder="isi email stimata"></input><br>
+            <label for="pwd">Password:</label>
+            <input type="password" size="20" maxlength="20" placeholder="Password kombinasi symbol"></input><br>
+            <label for="tgl">Tanggal lahir:</label>
+            <input type="date"></input><br>
+            <label for="jurusan">Jurusan:</label>
+            <select name="varselect" id="varselect">
+                <option value="jurusan">-- Jurusan --</option>
+                <option value="D3 - Sistem Informasi">D3 Sistem Informasi</option>
+                <option value="S1 - Sistem Informasi">S1 Sistem Informasi</option>
+                <option value="D3 - Teknologi Informasi">S1 Teknologi Informasi</option>
+            </select><br>
+            <label for="hobi">Hobi:</label>
+            <input type="checkbox" name="hobi1" id="hobi1">Horeg</input>
+            <input type="checkbox" name="hobi2" id="hobi2">Jalan-jalan</input>
+            <input type="checkbox" name="hobi3" id="hobi3">Tidur</input>
+            <br>
+            <input type="submit" value="Kirim"></input>
+            <input type="reset"></input>
+        </form>
+        <br>
+        <table border="1">
+            <caption>Data mahasiswa</caption>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Password</th>
+            </tr>
+            <tr>
+                <td>10.24.0010</td>
+                <td>Lusia</td>
+                <td>lusia10240010@stimata.ac.id</td>
+                <td>********</td>
+            </tr>
+        </table>
+
+        <h2>Media Gambar</h2>
+        <section>
+            <figure>
+                <img src="https://assets.kompasiana.com/items/album/2024/10/29/screenshot-20241028-192742-youtube-6720d919ed64150b86690c24.jpg"
+                    alt="Gambar ambalabu" width="20%">
+                <figcaption>Gambar ambalabu</figcaption>
+            </figure>
+        </section>
+
+        <h2>Media video</h2>
+        <section>
+            <video width="320" controls>
+                <source src="https://h.top4top.io/m_35677ct381.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <h2>Media audio</h2>
+        <section>
+            <audio controls>
+                <source src="https://j.top4top.io/m_3567xp0h61.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+    </main><br>
+    <footer>Copyright &copy; 2025 - Rizki Wahyu</footer>
+</body>
+
+</html>
