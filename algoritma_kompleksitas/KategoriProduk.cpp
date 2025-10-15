@@ -2,11 +2,9 @@
 #include <string>
 
 int main() {
-    int kodeProduk = 3; [span_4](start_span)
+    int kodeProduk = 3;
     std::string namaKategori;
-
     std::cout << "Kode Produk: " << kodeProduk << std::endl;
-
     switch (kodeProduk) {
         case 1:
             namaKategori = "Elektronik";
@@ -24,11 +22,9 @@ int main() {
             namaKategori = "Buku";
             break;
         default:
-            [span_5](start_span)
             namaKategori = "Kode Produk Tidak Valid";
             break;
     }
-
     std::cout << "Kategori: " << namaKategori << std::endl;
     return 0;
 }
